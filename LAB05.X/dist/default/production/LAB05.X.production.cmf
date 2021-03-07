@@ -1,0 +1,346 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/7segmentosdecimal.o
+resVect CODE 0 0 0 3 2
+code CODE 0 0 0 1B4 2
+intVect CODE 0 0 0 10 2
+udata_bank0 BANK0 1 20 20 C 1
+udata_shr COMMON 1 70 70 2 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2C-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 2C-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 1B4-1FFF 2
+ENTRY 1B4-1FFF 2
+IDLOC 2000-2003 2
+CODE 1B4-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 1B4-1FFF 2
+STRING 1B4-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/7segmentosdecimal.o
+0 intVect CODE >68:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+4 intVect CODE >70:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+4 intVect CODE >71:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+5 intVect CODE >72:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+6 intVect CODE >73:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+7 intVect CODE >75:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+7 intVect CODE >76:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+8 intVect CODE >77:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+9 intVect CODE >78:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+A intVect CODE >79:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+B intVect CODE >81:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+B intVect CODE >82:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+C intVect CODE >83:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+D intVect CODE >84:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+E intVect CODE >85:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+F intVect CODE >86:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+0 resVect CODE >60:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+0 resVect CODE >62:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+0 resVect CODE >63:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+2 resVect CODE >64:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+0 code CODE >89:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+100 code CODE >91:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+100 code CODE >92:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+101 code CODE >93:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+102 code CODE >96:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+103 code CODE >98:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+104 code CODE >99:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+105 code CODE >100:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+106 code CODE >101:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+107 code CODE >102:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+108 code CODE >103:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+109 code CODE >104:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+10A code CODE >105:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+10B code CODE >106:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+10C code CODE >107:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+10D code CODE >108:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+10E code CODE >109:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+10F code CODE >110:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+110 code CODE >111:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+111 code CODE >112:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+112 code CODE >113:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+113 code CODE >115:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+113 code CODE >116:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+114 code CODE >117:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+115 code CODE >118:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+116 code CODE >119:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+117 code CODE >121:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+117 code CODE >122:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+118 code CODE >123:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+119 code CODE >125:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+11A code CODE >126:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+11B code CODE >128:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+11C code CODE >130:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+11D code CODE >132:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+11E code CODE >134:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+11E code CODE >135:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+120 code CODE >136:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+121 code CODE >137:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+122 code CODE >138:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+123 code CODE >139:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+124 code CODE >141:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+125 code CODE >142:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+126 code CODE >144:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+126 code CODE >145:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+128 code CODE >146:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+129 code CODE >147:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+12A code CODE >149:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+12B code CODE >150:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+12C code CODE >151:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+12D code CODE >152:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+12E code CODE >153:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+12F code CODE >154:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+130 code CODE >155:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+131 code CODE >156:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+132 code CODE >157:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+133 code CODE >158:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+134 code CODE >160:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+134 code CODE >161:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+135 code CODE >162:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+136 code CODE >163:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+137 code CODE >165:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+138 code CODE >166:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+139 code CODE >167:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13A code CODE >169:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13A code CODE >170:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13B code CODE >171:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13C code CODE >172:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13D code CODE >174:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13E code CODE >175:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+13F code CODE >177:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+140 code CODE >179:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+140 code CODE >180:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+141 code CODE >181:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+142 code CODE >182:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+143 code CODE >184:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+144 code CODE >185:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+145 code CODE >186:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+146 code CODE >188:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+146 code CODE >189:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+147 code CODE >190:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+148 code CODE >191:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+149 code CODE >193:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14A code CODE >194:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14B code CODE >195:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14C code CODE >197:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14C code CODE >198:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14D code CODE >199:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14E code CODE >200:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+14F code CODE >202:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+150 code CODE >203:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+151 code CODE >204:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+152 code CODE >206:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+152 code CODE >207:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+153 code CODE >208:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+154 code CODE >209:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+155 code CODE >211:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+156 code CODE >212:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+157 code CODE >213:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+158 code CODE >214:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+159 code CODE >216:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+159 code CODE >217:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+15A code CODE >218:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+15B code CODE >219:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+15C code CODE >221:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+15D code CODE >222:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+15E code CODE >223:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+15F code CODE >224:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+160 code CODE >226:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+160 code CODE >228:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+161 code CODE >229:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+162 code CODE >230:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+163 code CODE >231:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+164 code CODE >232:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+165 code CODE >233:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+166 code CODE >234:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+167 code CODE >235:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+168 code CODE >236:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+169 code CODE >237:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+16A code CODE >239:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+16B code CODE >240:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+16C code CODE >241:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+16D code CODE >243:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+16E code CODE >244:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+16F code CODE >245:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+170 code CODE >246:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+171 code CODE >247:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+172 code CODE >248:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+173 code CODE >249:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+174 code CODE >250:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+175 code CODE >252:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+176 code CODE >253:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+177 code CODE >254:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+178 code CODE >256:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+179 code CODE >257:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+17A code CODE >258:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+17B code CODE >259:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+17C code CODE >274:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+17C code CODE >276:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+17E code CODE >277:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+17F code CODE >278:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+180 code CODE >280:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+182 code CODE >281:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+183 code CODE >282:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+184 code CODE >284:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+185 code CODE >285:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+186 code CODE >286:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+187 code CODE >287:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+188 code CODE >288:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+189 code CODE >290:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+18A code CODE >291:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+18B code CODE >292:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+18C code CODE >294:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+18D code CODE >295:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+18E code CODE >296:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+18F code CODE >299:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+191 code CODE >300:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+192 code CODE >301:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+193 code CODE >302:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+194 code CODE >306:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+196 code CODE >307:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+197 code CODE >308:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+198 code CODE >310:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+199 code CODE >311:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+19A code CODE >312:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+19B code CODE >316:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+19D code CODE >317:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+19E code CODE >318:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+19F code CODE >319:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A0 code CODE >321:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A1 code CODE >322:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A2 code CODE >324:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A2 code CODE >326:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A4 code CODE >327:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A5 code CODE >328:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A6 code CODE >330:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A8 code CODE >331:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1A9 code CODE >332:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AA code CODE >333:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AB code CODE >335:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AB code CODE >337:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AC code CODE >338:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AD code CODE >339:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AE code CODE >340:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1AF code CODE >341:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1B0 code CODE >343:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1B0 code CODE >345:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1B1 code CODE >346:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1B2 code CODE >347:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+1B3 code CODE >348:C:\Users\Medardo\MPLABXProjects\LAB05.X\7segmentosdecimal.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 1B4 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 C 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
